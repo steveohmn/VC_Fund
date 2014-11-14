@@ -53,13 +53,12 @@
 		
 		// iterate through each object in JSON
 		return_json_markup($user_data);
-				
-		
 	}
 	else {
 		die ("Invalid link!");
 	}
 	
+	// main output function for detailed user info
 	function return_json_markup($data) {
 	
 		foreach($data as $key => $value) {
@@ -85,7 +84,6 @@
 					// parse each element in the list of locations, roles, skills
 					echo name_with_links($list_elem);
 					echo "<BR>";
-					
 				}
 				
 				echo "</BLOCKQUOTE>";
@@ -114,14 +112,13 @@
 				}
 				else
 					echo $value . "<BR>";
-				
-				
 			}
 		}
 		
 		return;
 	}
 	
+	// Converting the key into more readable format
 	function key_display($key) {
 		if ($key == "bio")
 			$key = "About";
@@ -158,11 +155,11 @@
 		else if ($key == "resume_url")
 			$key = "Resume";
 		
-		
 		return $key;
 		
 	}	
 	
+	// helper function for putting hyperlink to user's SNS
 	function name_with_links($list) {
 	
 		$return_field = "<a href=". $list->{'angellist_url'} ." >". $list->{'display_name'};

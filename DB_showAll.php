@@ -121,6 +121,7 @@
 	// Close the database connection
 	mysql_close($db_connection);
 
+	// helper function for feeding new line for long string
 	function shorten_string($str) {
 		$size = strlen($str);
 		$max_size = 60;
