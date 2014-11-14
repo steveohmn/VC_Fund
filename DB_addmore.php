@@ -3,7 +3,7 @@
 		<title> VC Fund Project </title>
 		<link rel="stylesheet" href="./table.css">
 		<style>
-			body {background-color:lightgray; font-family: Sans-serif; font-size: 16}
+			body {background-color:lightgray; font-family: Sans-serif}
 		</style>
 	</head>
 
@@ -17,7 +17,6 @@
 	<div id = "buttons">
 		<input id = "DB_load" type="button" value="Load AngelList" onclick="location='DB_load.php'" />
 		<input id = "DB_delete" type="button" value="Delete AngelList" onclick="location='DB_delete.php'" />
-		<input id = "DB_addmore" type="button" value="Load MORE AngelList" onclick="location='DB_addmore.php'" />
 		<input id = "DB_showAll" type="button" value="Show ALL AngelList" onclick="location='DB_showAll.php'" />
 	</div>
 
@@ -155,7 +154,7 @@
 		
 		return $key;
 		
-	}	
+	}
 	
 	function name_with_links($list) {
 	
