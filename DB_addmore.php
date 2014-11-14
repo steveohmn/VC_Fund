@@ -151,6 +151,13 @@
 			$key = "Investor";
 		else if ($key == "criteria")
 			$key = "Criteria";
+		else if ($key == "blog_url")
+			$key = "Blog";
+		else if ($key == "aboutme_url")
+			$key = "About.me";
+		else if ($key == "resume_url")
+			$key = "Resume";
+		
 		
 		return $key;
 		
